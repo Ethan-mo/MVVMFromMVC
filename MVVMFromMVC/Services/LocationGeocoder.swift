@@ -29,6 +29,7 @@
 import Foundation
 import CoreLocation
 
+// API를 통해 가져온 LocationData를 문자열로 변형한다.
 class LocationGeocoder {
   private lazy var geocoder = CLGeocoder()
   

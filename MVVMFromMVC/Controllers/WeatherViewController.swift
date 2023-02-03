@@ -29,13 +29,21 @@
 import UIKit
 
 class WeatherViewController: UIViewController {
+  
+  // 주소 받아서 위도 경도(문자열)로 표현하기
   private let geocoder = LocationGeocoder()
+  
+  // 기본 주소 설정
   private let defaultAddress = "McGaheysville, VA"
+  
+  // 날짜 형식을 세팅
   private let dateFormatter: DateFormatter = {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "EEEE, MMM d"
     return dateFormatter
   }()
+  
+  // 온도를 정수로 표현
   private let tempFormatter: NumberFormatter = {
     let tempFormatter = NumberFormatter()
     tempFormatter.numberStyle = .none
@@ -49,6 +57,7 @@ class WeatherViewController: UIViewController {
   @IBOutlet weak var forecastSummary: UITextView!
   
   override func viewDidLoad() {
+    // 초기 값 지정
     geocoder.geocode(addressString: defaultAddress) { [weak self] locations in
       guard
         let self = self,
@@ -56,7 +65,9 @@ class WeatherViewController: UIViewController {
         else {
           return
         }
+      // 초기 지역 설정
       self.cityLabel.text = location.name
+      // location지역의 날씨정보 불러오기
       self.fetchWeatherForLocation(location)
     }
   }
