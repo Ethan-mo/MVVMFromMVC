@@ -39,10 +39,10 @@ enum WeatherbitError: Error {
   case invalidData
 }
 
-class WeatherbitService {
+class 날씨서비스 {
   typealias WeatherDataCompletion = (WeatherbitData?, WeatherbitError?) -> ()
   
-  private static let apiKey = "your key goes here"
+  private static let apiKey = "b4cd55d1bf5146a4af698275bdb387dd"
   private static let host = "api.weatherbit.io"
   private static let path = "/v2.0/current"
   private static let fahrenheit = "I"
@@ -52,7 +52,7 @@ class WeatherbitService {
     return formatter
   }()
   
-  static func weatherDataForLocation(latitude: Double, longitude: Double, completion: @escaping WeatherDataCompletion) {
+  static func 지역에대한날씨정보(latitude: Double, longitude: Double, completion: @escaping WeatherDataCompletion) {
     var urlBuilder = URLComponents()
     urlBuilder.scheme = "https"
     urlBuilder.host = host

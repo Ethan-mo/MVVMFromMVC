@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		38159E9824352DD000819474 /* WeatherbitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38159E9724352DD000819474 /* WeatherbitData.swift */; };
-		38159E9A24352E8300819474 /* WeatherbitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38159E9924352E8300819474 /* WeatherbitService.swift */; };
+		38159E9A24352E8300819474 /* 날씨서비스.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38159E9924352E8300819474 /* 날씨서비스.swift */; };
 		3853FB7B237B8D1D00835B42 /* WeatherbitDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3853FB7A237B8D1D00835B42 /* WeatherbitDataTests.swift */; };
 		3853FB89237C671A00835B42 /* WeatherbitExample.json in Resources */ = {isa = PBXBuildFile; fileRef = 3853FB87237B9C0100835B42 /* WeatherbitExample.json */; };
 		3864C3EA237CB7FF000C9CA0 /* LocationGeocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864C3E9237CB7FF000C9CA0 /* LocationGeocoder.swift */; };
@@ -16,6 +16,8 @@
 		3864C3EE237CC1F4000C9CA0 /* LocationGeocoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864C3ED237CC1F4000C9CA0 /* LocationGeocoderTests.swift */; };
 		3864C3F0237CC570000C9CA0 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864C3EF237CC570000C9CA0 /* WeatherViewController.swift */; };
 		5394F02521864DF5006E754C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5394F02321864DF4006E754C /* LaunchScreen.storyboard */; };
+		A9B6F516299080B7000A9A43 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B6F515299080B7000A9A43 /* Box.swift */; };
+		A9B6F51829908FFE000A9A43 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B6F51729908FFE000A9A43 /* WeatherViewModel.swift */; };
 		D2A5F2091F4A9144005CD714 /* Weather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F2071F4A9144005CD714 /* Weather.storyboard */; };
 		D2A5F20B1F4A9144005CD714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F20A1F4A9144005CD714 /* Assets.xcassets */; };
 		D2A5F2211F4A96D0005CD714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A5F2201F4A96D0005CD714 /* AppDelegate.swift */; };
@@ -33,7 +35,7 @@
 
 /* Begin PBXFileReference section */
 		38159E9724352DD000819474 /* WeatherbitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherbitData.swift; sourceTree = "<group>"; };
-		38159E9924352E8300819474 /* WeatherbitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherbitService.swift; sourceTree = "<group>"; };
+		38159E9924352E8300819474 /* 날씨서비스.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "날씨서비스.swift"; sourceTree = "<group>"; };
 		3853FB78237B8D1D00835B42 /* MVVMFromMVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMFromMVCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3853FB7A237B8D1D00835B42 /* WeatherbitDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherbitDataTests.swift; sourceTree = "<group>"; };
 		3853FB7C237B8D1D00835B42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +45,8 @@
 		3864C3ED237CC1F4000C9CA0 /* LocationGeocoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationGeocoderTests.swift; sourceTree = "<group>"; };
 		3864C3EF237CC570000C9CA0 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		5394F02421864DF4006E754C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9B6F515299080B7000A9A43 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		A9B6F51729908FFE000A9A43 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		D2A5F2001F4A9144005CD714 /* Grados.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grados.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A5F2081F4A9144005CD714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Weather.storyboard; sourceTree = "<group>"; };
 		D2A5F20A1F4A9144005CD714 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				3864C3E9237CB7FF000C9CA0 /* LocationGeocoder.swift */,
-				38159E9924352E8300819474 /* WeatherbitService.swift */,
+				38159E9924352E8300819474 /* 날씨서비스.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -117,6 +121,7 @@
 		6351BBCE23AE8A6A00B7C4DF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				A9B6F515299080B7000A9A43 /* Box.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 		6351BBCF23AE8A7000B7C4DF /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				A9B6F51729908FFE000A9A43 /* WeatherViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -277,11 +283,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3864C3F0237CC570000C9CA0 /* WeatherViewController.swift in Sources */,
+				A9B6F516299080B7000A9A43 /* Box.swift in Sources */,
 				3864C3EA237CB7FF000C9CA0 /* LocationGeocoder.swift in Sources */,
 				3864C3EC237CB938000C9CA0 /* Location.swift in Sources */,
 				D2A5F2211F4A96D0005CD714 /* AppDelegate.swift in Sources */,
+				A9B6F51829908FFE000A9A43 /* WeatherViewModel.swift in Sources */,
 				38159E9824352DD000819474 /* WeatherbitData.swift in Sources */,
-				38159E9A24352E8300819474 /* WeatherbitService.swift in Sources */,
+				38159E9A24352E8300819474 /* 날씨서비스.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,7 +487,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = URTJJ24R4X;
 				INFOPLIST_FILE = "$(SRCROOT)/MVVMFromMVC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -499,7 +507,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = URTJJ24R4X;
 				INFOPLIST_FILE = "$(SRCROOT)/MVVMFromMVC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
